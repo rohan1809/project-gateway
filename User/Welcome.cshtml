@@ -1,0 +1,37 @@
+﻿@model WebApplication2.Models.tbl_user
+
+
+@{
+
+
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View  Category</title>
+    
+</head>
+<body>
+    @using (@Html.BeginForm())
+    {
+        if (Session["u_id"] != null)
+        {
+
+            <h1>Hello,</h1>
+            <h2>Welcome @Session["u_name"]</h2>
+        }
+    }
+
+    </body>
+</html>
+
+
+
+
+
+
